@@ -54,7 +54,20 @@ It allows users to search movies, explore categories, and save their favorite mo
 
 ## 📸 Screenshots
 
-*(Add your screenshots here later)*
+### 🏠 Home Page
+![Home](home.png)
+
+### 🔍 Search Page
+![Search](search.png)
+
+### 🎬 Movie Details Page
+![Details](details.png)
+
+### 💾 Saved Movies
+![Saved](saved.png)
+
+### ▶️ Trailer Feature
+![Trailer](trailer.png)
 
 ---
 
