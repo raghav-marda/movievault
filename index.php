@@ -5,7 +5,7 @@ session_start();
 <?php
 include 'config.php';
 
-$TMDB_KEY = "0036a36db63b8e42a8a376d8a4108a8a";
+$TMDB_KEY = "YOUR_API_KEY";
 
 $trendingUrl = "https://api.themoviedb.org/3/trending/movie/day?api_key={$TMDB_KEY}";
 $trendingJson = @file_get_contents($trendingUrl);
