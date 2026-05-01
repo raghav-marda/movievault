@@ -2,7 +2,7 @@
 include 'config.php';
 
 // TMDB API key
-$TMDB_KEY = "0036a36db63b8e42a8a376d8a4108a8a";
+$TMDB_KEY = "YOUR_API_KEY";
 
 // Fetch Trending Movies (Daily)
 $url = "https://api.themoviedb.org/3/trending/movie/day?api_key={$TMDB_KEY}";
