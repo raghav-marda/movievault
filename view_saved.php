@@ -1,24 +1,16 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['user_id'])) {
     header("Location: auth.php");
     exit();
 }
-?>
 
-<?php include 'config.php'; ?>
+include 'config.php';
 
-// 🔒 Only logged in users
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html");
-    exit();
-}
-
-// ✅ DIRECTLY use session (no DB query)
 $user_id = $_SESSION['user_id'];
 
-// Delete movie (only user's movie)
+// Delete movie
 if (isset($_GET['delete'])) {
     $deleteId = intval($_GET['delete']);
 
@@ -30,12 +22,13 @@ if (isset($_GET['delete'])) {
     exit;
 }
 
-// Fetch ONLY this user's movies
+// Fetch movies
 $stmt = $conn->prepare("SELECT * FROM saved_movies WHERE user_id = ? ORDER BY id DESC");
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
