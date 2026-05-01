@@ -3,7 +3,7 @@ include 'config.php';
 
 $id = $_GET['id'] ?? '';
 $movie = null;
-$TMDB_KEY = "0036a36db63b8e42a8a376d8a4108a8a";
+$TMDB_KEY = "YOUR_API_KEY";
 
 function fetchTmdbDetails($tmdb_id, $TMDB_KEY) {
     $detailsUrl = "https://api.themoviedb.org/3/movie/{$tmdb_id}?api_key={$TMDB_KEY}&append_to_response=videos,credits";
