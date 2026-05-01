@@ -93,7 +93,7 @@ h1 {
         <div class="movie-info">
           <strong><?= htmlspecialchars($m['title']) ?></strong>
           <div class="rating">⭐ <?= htmlspecialchars($m['vote_average']) ?></div>
-          <a href="search.php?q=<?= urlencode($m['title']) ?>">View Details</a>
+          <a href="search.php?id=<?= $m['id'] ?>">View Details</a>
         </div>
       </div>
     <?php endforeach; ?>
