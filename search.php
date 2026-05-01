@@ -1,8 +1,8 @@
 <?php
 include 'config.php';
 
-$TMDB_KEY = "0036a36db63b8e42a8a376d8a4108a8a";
-$OMDB_KEY  = "c5556bd9";
+$TMDB_KEY = "YOUR_API_KEY";
+$OMDB_KEY  = "YOUR_API_KEY";
 
 function tmdb_search($query, $tmdb_key) {
     $url = "https://api.themoviedb.org/3/search/movie?api_key={$tmdb_key}&query=" . urlencode($query);

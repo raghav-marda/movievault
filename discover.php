@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-$TMDB_KEY = "0036a36db63b8e42a8a376d8a4108a8a";
+$TMDB_KEY = "YOUR_API_KEY";
 
 // Detect category from URL
 $category = $_GET['type'] ?? 'hollywood';
