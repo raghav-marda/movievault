@@ -2,6 +2,6 @@
 session_start();
 session_destroy();
 
-header("Location: index.php"); // 👈 change here
+header("Location: index.php"); 
 exit;
 ?>
