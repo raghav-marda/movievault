@@ -4,7 +4,9 @@ include 'config.php';
 
 // 🔒 Must be logged in
 if (!isset($_SESSION['user_id'])) {
-    echo "<script>alert('Please login first'); window.location.href='login.html';</script>";
+    echo "<script>
+        window.location.href='index.php?login_required=1';
+    </script>";
     exit();
 }
 
