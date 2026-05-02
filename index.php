@@ -204,5 +204,13 @@ if (!empty($movies)) {
 })();
 </script>
 
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get('login_required') === '1') {
+    window.location.href = 'auth.php';
+}
+</script>
+
 </body>
 </html>
